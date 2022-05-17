@@ -1,5 +1,6 @@
 import { defineComponent, reactive } from 'vue'
 const logo = require('./assets/logo.png') //eslint-disable-line
+import HelloWorld from './components/HelloWorld.vue'
 
 export default defineComponent({
   setup() {
@@ -15,6 +16,7 @@ export default defineComponent({
         <div>
           <img src={logo} alt="" />
           <p>{state.name}</p>
+          <HelloWorld age={123} msg={'hello'}></HelloWorld>
         </div>
       )
     }
